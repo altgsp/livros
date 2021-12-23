@@ -1,0 +1,17 @@
+.minhaModal {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(17, 16, 16);
+    border-radius: 20px;
+    background-color: rgb(235, 231, 231);
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 200px;
+    left: 500px;
+}
+
+.tituloModal {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

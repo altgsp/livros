@@ -1,0 +1,43 @@
+{
+  "Livros": [
+    {
+      "id": 5,
+      "nome": "Sobrevivente",
+      "autor": "Chuck Palahniuk",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/61nd6-q4n1L._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Metamorfose",
+      "autor": "Frans Kafka",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41QPh1knJOL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "A insustentável Leveza do Ser",
+      "autor": "Milan Kundera",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51WDlVW2JtL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "genero": "Drama"
+    },
+    {
+      "id": 9,
+      "nome": "O lobo da estepe",
+      "autor": "Hermman Hesse",
+      "foto": "https://m.media-amazon.com/images/I/41ezfeONzzL._SY346_.jpg"
+    },
+    {
+      "id": 10,
+      "nome": "Quarto de despejo",
+      "autor": "Carolina Maria de Jesus",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41CgGOAo09L._SX322_BO1,204,203,200_.jpg",
+      "genero": null
+    },
+    {
+      "id": 11,
+      "nome": "O que Freud faria?",
+      "autor": "Sarah Tomley",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51RPnpeVDZL._SX346_BO1,204,203,200_.jpg",
+      "genero": null
+    }
+  ]
+}

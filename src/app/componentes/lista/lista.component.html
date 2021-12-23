@@ -1,0 +1,42 @@
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome do Livro</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Excluir</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of Livros">
+            <th>{{ item.id }}</th>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.autor }}</td>
+            <td>{{ item.foto }}</td>
+            <td>
+                <button class="btn btn-success" (click)="editar(item.id)">
+          Editar
+        </button>
+            </td>
+            <td>
+                <button class="btn btn-primary" (click)="mostrarModal(item.id)">
+          Excluir
+        </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="isModal">
+    <div class="minhaModal">
+        <div class="tituloModal bg-danger text-white pt-2 pb-2 mb-4">
+            <h5>Aviso</h5>
+        </div>
+        <h6 class="mb-4">Você está excluindo esse livro permanentemente. Deseja prosseguir?</h6>
+        <button class="btn btn-outline-danger mx-1" (click)="cancelarAcao()">Não</button>
+        <button class="btn btn-danger mx-1" (click)="confirmarAcao()">Sim</button>
+    </div>
+</div>

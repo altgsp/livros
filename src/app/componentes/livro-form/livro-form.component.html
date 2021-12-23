@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="formulario">
+                <form [formGroup]="form">
+                    <div class="row mb-3">
+                        <label class="col-form-label">Nome do Livro:</label>
+                        <div>
+                            <input type="text" class="form-control" id="nome" formControlName="nome">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-form-label">Autor do Livro:</label>
+                        <div>
+                            <input type="text" class="form-control" id="autor" formControlName="autor">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-form-label">Gênero do Livro:</label>
+                        <div>
+                            <input type="text" class="form-control" id="genero" formControlName="genero">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-form-label">Link da imagem:</label>
+                        <div>
+                            <input type="text" class="form-control" id="foto" formControlName="foto">
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-danger mx-1" (click)="salvarLivro()">Salvar</button>
+                    <button type="reset" class="btn btn-outline-danger mx-1" routerLink="/lista">Cancelar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="foto">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="isModal">
+    <div class="minhaModal">
+        <div class="tituloModal bg-dark text-white pt-2 pb-1 mb-3">
+            <h5>Parabéns</h5>
+        </div>
+        <h4 class="mb-4">Livro {{acao}} com sucesso!</h4>
+        <button class="btn btn-dark mx-1" (click)="fecharModal()">Fechar</button>
+    </div>
+</div>
